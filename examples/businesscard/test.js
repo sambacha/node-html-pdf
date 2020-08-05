@@ -19,10 +19,10 @@ test('allows custom html and css', function (t) {
   }
 
   pdf
-  .create(templateHtml, options)
-  .toFile(filename, function (err, pdf) {
-    t.error(err)
-    t.assert(pdf.filename, 'Returns the filename')
-    t.assert(fs.existsSync(pdf.filename), 'Saves the file to the desired destination')
-  })
+    .create(templateHtml, options)
+    .toFile(filename, function (err, pdf) {
+      t.error(err)
+      t.assert(pdf.filename, 'Returns the filename')
+      t.assert(fs.existsSync(pdf.filename), 'Saves the file to the desired destination')
+    })
 })
