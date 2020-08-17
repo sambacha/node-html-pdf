@@ -6,4 +6,5 @@ node_js:
 before_script:
   - npm install -g html-pdf
 script:
-  - npm test
+  - npm build
+
