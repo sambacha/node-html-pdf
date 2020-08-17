@@ -2,9 +2,6 @@
   "name": "html-pdf",
   "version": "2.2.7",
   "description": "HTML to PDF converter that uses phantomjs",
-  "engines": {
-    "node": ">=4.0.0"
-  },
   "main": "lib/index.js",
   "directories": {
     "test": "test"
