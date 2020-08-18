@@ -1,5 +1,10 @@
 # node-html-pdf
 
+[![Build Status](https://travis-ci.com/sambacha/node-html-pdf.svg?branch=master)](https://travis-ci.com/sambacha/node-html-pdf)
+
+> fork, on npm as 'html-pdf-lts' -- includes security fixes 
+
+
 ## HTML to PDF converter that uses phantomjs
 
 ![image](examples/businesscard/businesscard.png)  
