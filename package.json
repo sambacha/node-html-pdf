@@ -1,5 +1,5 @@
 {
-  "name": "html-pdf2",
+  "name": "html-pdf-lts",
   "version": "2.2.7",
   "description": "HTML to PDF converter that uses phantomjs",
   "main": "lib/index.js",
