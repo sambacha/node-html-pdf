@@ -16,10 +16,10 @@
   "devDependencies": {
     "standard": "^14.3.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.0.0"
+    "tape": "^5.0.0"
   },
   "optionalDependencies": {
-    "phantomjs-prebuilt": "^2.1.4"
+    "phantomjs-prebuilt": "^2.1.16"
   },
   "repository": {
     "type": "git",
