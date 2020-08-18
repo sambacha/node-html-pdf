@@ -1,25 +1,25 @@
-declare module 'html-pdf' {
-
-  import * as fs from 'fs';
+declare module "html-pdf" {
+  import * as fs from "fs";
 
   export interface CreateOptions {
-
     // Export options
     directory?: string;
 
     // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
     height?: string;
     width?: string;
-    format?: 'A3' | 'A4' | 'A5' | 'Legal' | 'Letter' | 'Tabloid';
-    orientation?: 'portrait' | 'landscape';
+    format?: "A3" | "A4" | "A5" | "Legal" | "Letter" | "Tabloid";
+    orientation?: "portrait" | "landscape";
 
     // Page options
-    border?: string | {
-      top?: string;
-      right?: string;
-      bottom?: string;
-      left?: string;
-    };
+    border?:
+      | string
+      | {
+          top?: string;
+          right?: string;
+          bottom?: string;
+          left?: string;
+        };
 
     header?: {
       height?: string;
@@ -42,7 +42,7 @@ declare module 'html-pdf' {
     zoomFactor?: string;
 
     // File options
-    type?: 'png' | 'jpeg' | 'pdf';
+    type?: "png" | "jpeg" | "pdf";
     quality?: string;
 
     // Script options
@@ -76,8 +76,7 @@ declare module 'html-pdf' {
       // resourceTimeout (in milli-secs) defines the timeout after which any resource requested will stop trying and proceed with other parts of the page.
       // onResourceTimeout callback will be called on timeout.
       resourceTimeout?: number;
-    }
-
+    };
   }
 
   export interface FileInfo {
@@ -87,8 +86,17 @@ declare module 'html-pdf' {
   export interface CreateResult {
     toBuffer(callback: (err: Error, buffer: Buffer) => void): void;
     toFile(callback: (err: Error, res: FileInfo) => void): void;
-    toFile(filename?: string, callback?: (err: Error, res: FileInfo) => void): void;
-    toStream(callback: (err: Error, stream: fs.ReadStream, dimensions: { height: number, width: number }) => void): void;
+    toFile(
+      filename?: string,
+      callback?: (err: Error, res: FileInfo) => void
+    ): void;
+    toStream(
+      callback: (
+        err: Error,
+        stream: fs.ReadStream,
+        dimensions: { height: number; width: number }
+      ) => void
+    ): void;
   }
 
   export function create(html: string, options?: CreateOptions): CreateResult;

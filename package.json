@@ -12,7 +12,6 @@
   "scripts": {
     "test": "standard && tape test/index.js examples/*/test.js"
   },
-  "author": "Marc Bachmann",
   "license": "MIT",
   "devDependencies": {
     "standard": "^14.3.0",
@@ -24,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/marcbachmann/node-html-pdf.git"
+    "url": "git://github.com/sambacha/node-html-pdf.git"
   },
   "keywords": [
     "html",
@@ -34,7 +33,7 @@
     "nodejs"
   ],
   "bugs": {
-    "url": "https://github.com/marcbachmann/node-html-pdf/issues"
+    "url": "https://github.com/sambacha/node-html-pdf/issues"
   },
-  "homepage": "https://github.com/marcbachmann/node-html-pdf"
+  "homepage": "https://github.com/sambacha/node-html-pdf"
 }

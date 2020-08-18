@@ -7,4 +7,3 @@ before_script:
   - npm install -g html-pdf
 script:
   - npm build
-
